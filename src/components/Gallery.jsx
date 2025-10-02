@@ -71,8 +71,14 @@ export default function Gallery() {
 
       {/* Fullscreen Modal */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-          <div className="relative max-w-5xl max-h-[90vh]">
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)} // click outside to close
+        >
+          <div
+            className="relative max-w-5xl max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
+          >
             <img
               src={selectedImage.src}
               alt={selectedImage.title}
