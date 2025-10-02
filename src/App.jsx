@@ -20,6 +20,7 @@ export default function App(){
       </main>
 
       <footer className="px-6 pb-12 flex-1 space-y-16">
+        Contributor/Owner: Sarvesh
       </footer>
     </div>
   )
