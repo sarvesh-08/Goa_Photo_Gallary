@@ -8,7 +8,7 @@ export default function App(){
         <div>
           <h1 className="text-3xl font-extrabold tracking-tight">Goa Nature Gallery</h1>
           <p className="text-slate-400 mt-1">
-            Beatiful Goa Clicks!
+            Beautiful Goa Clicks!
           </p>
         </div>
         
